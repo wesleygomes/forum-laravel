@@ -1,0 +1,1767 @@
+version: 1
+creator: xdebug 2.5.4 (PHP 7.0.22-0ubuntu0.16.04.1)
+cmd: /var/www/Projetos Laravel/webgrind/index.php
+part: 1
+positions: line
+
+events: Time
+
+fl=(1) php:internal
+fn=(1) php::realpath
+9 6
+
+fl=(1)
+fn=(2) php::is_file
+9 1
+
+fl=(2) /var/www/Projetos Laravel/webgrind/config.php
+fn=(3) require::/var/www/Projetos Laravel/webgrind/config.php
+1 2
+
+fl=(3) /var/www/Projetos Laravel/webgrind/library/Reader.php
+fn=(4) require::/var/www/Projetos Laravel/webgrind/library/Reader.php
+1 0
+
+fl=(4) /var/www/Projetos Laravel/webgrind/library/Preprocessor.php
+fn=(5) require::/var/www/Projetos Laravel/webgrind/library/Preprocessor.php
+1 0
+
+fl=(5) /var/www/Projetos Laravel/webgrind/library/FileHandler.php
+fn=(6) require::/var/www/Projetos Laravel/webgrind/library/FileHandler.php
+1 30
+cfl=(3)
+cfn=(4)
+calls=1 0 0
+2 0
+cfl=(4)
+cfn=(5)
+calls=1 0 0
+3 0
+
+fl=(1)
+fn=(7) php::set_time_limit
+25 5
+
+fl=(1)
+fn=(8) php::ini_get
+28 2
+
+fl=(1)
+fn=(9) php::date_default_timezone_set
+29 3
+
+fl=(6) /var/www/Projetos Laravel/webgrind/index.php
+fn=(10) get
+230 3
+
+fl=(6)
+fn=(10)
+230 0
+
+fl=(1)
+fn=(8)
+100 1
+
+fl=(1)
+fn=(11) php::preg_replace
+104 4
+
+fl=(2)
+fn=(12) Webgrind_Config::xdebugOutputFormat
+99 19
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+100 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+104 4
+
+fl=(1)
+fn=(8)
+112 0
+
+fl=(1)
+fn=(1)
+115 1
+
+fl=(2)
+fn=(13) Webgrind_Config::xdebugOutputDir
+111 18
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+112 0
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+115 1
+
+fl=(1)
+fn=(14) php::scandir
+78 49
+
+fl=(1)
+fn=(15) php::preg_grep
+78 5
+
+fl=(1)
+fn=(16) php::function_exists
+82 0
+
+fl=(1)
+fn=(17) php::xdebug_get_profiler_filename
+83 0
+
+fl=(1)
+fn=(1)
+83 1
+
+fl=(1)
+fn=(18) php::strstr
+91 1
+
+fl=(1)
+fn=(1)
+95 0
+
+fl=(1)
+fn=(19) php::preg_match
+54 2
+
+fl=(1)
+fn=(20) php::fopen
+58 14
+
+fl=(1)
+fn=(21) php::fgets
+60 6
+
+fl=(1)
+fn=(19)
+61 0
+
+fl=(1)
+fn=(21)
+60 0
+
+fl=(1)
+fn=(19)
+61 0
+
+fl=(1)
+fn=(21)
+60 0
+
+fl=(1)
+fn=(19)
+61 1
+
+fl=(1)
+fn=(21)
+60 0
+
+fl=(1)
+fn=(22) php::fclose
+65 3
+
+fl=(5)
+fn=(23) Webgrind_FileHandler->getInvokeUrl
+53 77
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+54 2
+cfl=(1)
+cfn=(20)
+calls=1 0 0
+58 14
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+60 6
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+61 0
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+60 0
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+61 0
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+60 0
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+61 1
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+60 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+65 3
+
+fl=(1)
+fn=(24) php::rtrim
+98 0
+
+fl=(1)
+fn=(25) php::dirname
+99 1
+
+fl=(1)
+fn=(25)
+99 0
+
+fl=(1)
+fn=(26) php::filemtime
+103 6
+
+fl=(1)
+fn=(27) php::filesize
+106 0
+
+fl=(1)
+fn=(28) php::count
+195 0
+
+fl=(1)
+fn=(29) php::round
+200 1
+
+fl=(5)
+fn=(30) Webgrind_FileHandler->bytestostring
+193 27
+cfl=(1)
+cfn=(28)
+calls=1 0 0
+195 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+200 1
+
+fl=(1)
+fn=(18)
+91 1
+
+fl=(1)
+fn=(1)
+95 1
+
+fl=(5)
+fn=(31) Webgrind_FileHandler->getFiles
+77 162
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+78 49
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+78 5
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+82 0
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+83 0
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+83 1
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+91 1
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+95 0
+cfl=(5)
+cfn=(23)
+calls=1 0 0
+98 108
+cfl=(1)
+cfn=(24)
+calls=1 0 0
+98 0
+cfl=(1)
+cfn=(25)
+calls=1 0 0
+99 1
+cfl=(1)
+cfn=(25)
+calls=1 0 0
+99 0
+cfl=(1)
+cfn=(26)
+calls=1 0 0
+103 6
+cfl=(1)
+cfn=(27)
+calls=1 0 0
+106 0
+cfl=(5)
+cfn=(30)
+calls=1 0 0
+106 29
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+91 1
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+95 1
+
+fl=(1)
+fn=(16)
+125 1
+
+fl=(1)
+fn=(32) php::sys_get_temp_dir
+125 0
+
+fl=(1)
+fn=(33) php::is_writable
+125 5
+
+fl=(1)
+fn=(32)
+129 0
+
+fl=(1)
+fn=(1)
+129 0
+
+fl=(2)
+fn=(34) Webgrind_Config::storageDir
+121 41
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+125 1
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(33)
+calls=1 0 0
+125 5
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+129 0
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+129 0
+
+fl=(1)
+fn=(14)
+118 51
+
+fl=(1)
+fn=(15)
+118 3
+
+fl=(1)
+fn=(16)
+125 0
+
+fl=(1)
+fn=(17)
+125 0
+
+fl=(1)
+fn=(1)
+125 0
+
+fl=(1)
+fn=(1)
+125 1
+
+fl=(1)
+fn=(26)
+129 4
+
+fl=(1)
+fn=(27)
+131 0
+
+fl=(1)
+fn=(28)
+195 0
+
+fl=(1)
+fn=(29)
+200 1
+
+fl=(5)
+fn=(30)
+193 17
+cfl=(1)
+cfn=(28)
+calls=1 0 0
+195 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+200 1
+
+fl=(5)
+fn=(35) Webgrind_FileHandler->getPrepFiles
+117 74
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+118 51
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+118 3
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+125 1
+cfl=(1)
+cfn=(26)
+calls=1 0 0
+129 4
+cfl=(1)
+cfn=(27)
+calls=1 0 0
+131 0
+cfl=(5)
+cfn=(30)
+calls=1 0 0
+131 18
+
+fl=(1)
+fn=(36) php::str_replace
+33 2
+
+fl=(1)
+fn=(37) php::unlink
+38 48
+
+fl=(1)
+fn=(38) php::uasort
+43 5
+
+fl=(5)
+fn=(39) Webgrind_FileHandler->__construct
+25 142
+cfl=(2)
+cfn=(12)
+calls=1 0 0
+27 25
+cfl=(2)
+cfn=(13)
+calls=1 0 0
+27 21
+cfl=(5)
+cfn=(31)
+calls=1 0 0
+27 375
+cfl=(2)
+cfn=(34)
+calls=1 0 0
+30 50
+cfl=(5)
+cfn=(35)
+calls=1 0 0
+30 155
+cfl=(1)
+cfn=(36)
+calls=1 0 0
+33 2
+cfl=(1)
+cfn=(37)
+calls=1 0 0
+38 48
+cfl=(1)
+cfn=(38)
+calls=1 0 0
+43 5
+
+fl=(5)
+fn=(40) Webgrind_FileHandler::getInstance
+19 23
+cfl=(5)
+cfn=(39)
+calls=1 0 0
+21 826
+
+fl=(1)
+fn=(36)
+145 0
+
+fl=(1)
+fn=(41) php::date
+147 46
+
+fl=(5)
+fn=(42) Webgrind_FileHandler->getTraceList
+141 24
+cfl=(1)
+cfn=(36)
+calls=1 0 0
+145 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+147 46
+
+fl=(5)
+fn=(40)
+19 0
+
+fl=(6)
+fn=(10)
+230 1
+
+fl=(1)
+fn=(16)
+125 0
+
+fl=(1)
+fn=(32)
+125 0
+
+fl=(1)
+fn=(33)
+125 5
+
+fl=(1)
+fn=(32)
+129 0
+
+fl=(1)
+fn=(1)
+129 3
+
+fl=(2)
+fn=(34)
+121 36
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(33)
+calls=1 0 0
+125 5
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+129 0
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+129 3
+
+fl=(1)
+fn=(20)
+71 19
+
+fl=(1)
+fn=(43) php::Exception->__construct
+73 2
+
+fl=(3)
+fn=(44) Webgrind_Reader->__construct
+70 62
+cfl=(1)
+cfn=(20)
+calls=1 0 0
+71 19
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+73 2
+
+fl=(1)
+fn=(8)
+112 1
+
+fl=(1)
+fn=(1)
+115 9
+
+fl=(2)
+fn=(13)
+111 15
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+112 1
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+115 9
+
+fl=(1)
+fn=(20)
+47 10
+
+fl=(1)
+fn=(20)
+50 33
+
+fl=(1)
+fn=(33)
+143 5
+
+fl=(1)
+fn=(45) php::file_exists
+143 2
+
+fl=(1)
+fn=(46) php::is_executable
+145 3
+
+fl=(1)
+fn=(47) php::getcwd
+146 0
+
+fl=(1)
+fn=(48) php::chdir
+147 4
+
+fl=(1)
+fn=(49) php::exec
+148 5042
+
+fl=(1)
+fn=(48)
+149 14
+
+fl=(2)
+fn=(50) Webgrind_Config::getBinaryPreprocessor
+140 112
+cfl=(1)
+cfn=(33)
+calls=1 0 0
+143 5
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+143 2
+cfl=(1)
+cfn=(46)
+calls=1 0 0
+145 3
+cfl=(1)
+cfn=(47)
+calls=1 0 0
+146 0
+cfl=(1)
+cfn=(48)
+calls=1 0 0
+147 4
+cfl=(1)
+cfn=(49)
+calls=1 0 0
+148 5042
+cfl=(1)
+cfn=(48)
+calls=1 0 0
+149 14
+
+fl=(1)
+fn=(46)
+227 9
+
+fl=(1)
+fn=(51) php::escapeshellarg
+231 5
+
+fl=(1)
+fn=(51)
+231 3
+
+fl=(1)
+fn=(51)
+231 2
+
+fl=(1)
+fn=(51)
+233 2
+
+fl=(1)
+fn=(51)
+233 1
+
+fl=(1)
+fn=(49)
+235 224308
+
+fl=(4)
+fn=(52) Webgrind_Preprocessor::binaryParse
+224 148
+cfl=(2)
+cfn=(50)
+calls=1 0 0
+226 5184
+cfl=(1)
+cfn=(46)
+calls=1 0 0
+227 9
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+231 5
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+231 3
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+231 2
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+233 2
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+233 1
+cfl=(1)
+cfn=(49)
+calls=1 0 0
+235 224308
+
+fl=(4)
+fn=(53) Webgrind_Preprocessor::parse
+45 55
+cfl=(1)
+cfn=(20)
+calls=1 0 0
+47 10
+cfl=(1)
+cfn=(20)
+calls=1 0 0
+50 33
+cfl=(4)
+cfn=(52)
+calls=1 0 0
+55 229665
+
+fl=(1)
+fn=(20)
+71 26
+
+fl=(1)
+fn=(54) php::fread
+242 3
+
+fl=(1)
+fn=(55) php::unpack
+242 4
+
+fl=(1)
+fn=(56) php::array_values
+246 0
+
+fl=(3)
+fn=(57) Webgrind_Reader->read
+241 21
+cfl=(1)
+cfn=(54)
+calls=1 0 0
+242 3
+cfl=(1)
+cfn=(55)
+calls=1 0 0
+242 4
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+246 0
+
+fl=(1)
+fn=(54)
+242 0
+
+fl=(1)
+fn=(55)
+242 1
+
+fl=(1)
+fn=(56)
+246 0
+
+fl=(3)
+fn=(57)
+241 12
+cfl=(1)
+cfn=(54)
+calls=1 0 0
+242 0
+cfl=(1)
+cfn=(55)
+calls=1 0 0
+242 1
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+246 0
+
+fl=(3)
+fn=(58) Webgrind_Reader->init
+87 21
+cfl=(3)
+cfn=(57)
+calls=1 0 0
+88 29
+cfl=(3)
+cfn=(57)
+calls=1 0 0
+91 14
+
+fl=(3)
+fn=(44)
+70 24
+cfl=(1)
+cfn=(20)
+calls=1 0 0
+71 26
+cfl=(3)
+cfn=(58)
+calls=1 0 0
+76 65
+
+fl=(5)
+fn=(59) Webgrind_FileHandler->getTraceReader
+162 83
+cfl=(2)
+cfn=(34)
+calls=1 0 0
+163 45
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+165 83
+cfl=(2)
+cfn=(13)
+calls=1 0 0
+168 26
+cfl=(4)
+cfn=(53)
+calls=1 0 0
+168 229766
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+169 116
+
+fl=(1)
+fn=(28)
+99 0
+
+fl=(3)
+fn=(60) Webgrind_Reader->getFunctionCount
+98 7
+cfl=(1)
+cfn=(28)
+calls=1 0 0
+99 0
+
+fl=(1)
+fn=(61) php::fseek
+258 0
+
+fl=(3)
+fn=(62) Webgrind_Reader->seek
+257 7
+cfl=(1)
+cfn=(61)
+calls=1 0 0
+258 0
+
+fl=(1)
+fn=(54)
+242 0
+
+fl=(1)
+fn=(55)
+242 0
+
+fl=(1)
+fn=(56)
+246 0
+
+fl=(3)
+fn=(57)
+241 17
+cfl=(1)
+cfn=(54)
+calls=1 0 0
+242 0
+cfl=(1)
+cfn=(55)
+calls=1 0 0
+242 0
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+246 0
+
+fl=(1)
+fn=(61)
+258 0
+
+fl=(3)
+fn=(62)
+257 3
+cfl=(1)
+cfn=(61)
+calls=1 0 0
+258 0
+
+fl=(1)
+fn=(21)
+250 1
+
+fl=(1)
+fn=(63) php::trim
+252 0
+
+fl=(3)
+fn=(64) Webgrind_Reader->readLine
+249 11
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+250 1
+cfl=(1)
+cfn=(63)
+calls=1 0 0
+252 0
+
+fl=(1)
+fn=(21)
+250 0
+
+fl=(1)
+fn=(63)
+252 0
+
+fl=(3)
+fn=(64)
+249 9
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+250 0
+cfl=(1)
+cfn=(63)
+calls=1 0 0
+252 0
+
+fl=(1)
+fn=(61)
+258 0
+
+fl=(3)
+fn=(62)
+257 5
+cfl=(1)
+cfn=(61)
+calls=1 0 0
+258 0
+
+fl=(1)
+fn=(21)
+250 0
+
+fl=(1)
+fn=(63)
+252 0
+
+fl=(3)
+fn=(64)
+249 8
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+250 0
+cfl=(1)
+cfn=(63)
+calls=1 0 0
+252 0
+
+fl=(1)
+fn=(65) php::explode
+203 0
+
+fl=(1)
+fn=(21)
+250 1
+
+fl=(1)
+fn=(63)
+252 0
+
+fl=(3)
+fn=(64)
+249 7
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+250 1
+cfl=(1)
+cfn=(63)
+calls=1 0 0
+252 0
+
+fl=(1)
+fn=(65)
+203 0
+
+fl=(1)
+fn=(21)
+250 0
+
+fl=(1)
+fn=(63)
+252 0
+
+fl=(3)
+fn=(64)
+249 8
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+250 0
+cfl=(1)
+cfn=(63)
+calls=1 0 0
+252 0
+
+fl=(1)
+fn=(65)
+203 0
+
+fl=(1)
+fn=(21)
+250 0
+
+fl=(1)
+fn=(63)
+252 0
+
+fl=(3)
+fn=(64)
+249 9
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+250 0
+cfl=(1)
+cfn=(63)
+calls=1 0 0
+252 0
+
+fl=(1)
+fn=(65)
+203 0
+
+fl=(1)
+fn=(21)
+250 0
+
+fl=(1)
+fn=(63)
+252 0
+
+fl=(3)
+fn=(64)
+249 8
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+250 0
+cfl=(1)
+cfn=(63)
+calls=1 0 0
+252 0
+
+fl=(1)
+fn=(65)
+203 0
+
+fl=(1)
+fn=(21)
+250 0
+
+fl=(1)
+fn=(63)
+252 0
+
+fl=(3)
+fn=(64)
+249 7
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+250 0
+cfl=(1)
+cfn=(63)
+calls=1 0 0
+252 0
+
+fl=(1)
+fn=(65)
+203 0
+
+fl=(1)
+fn=(21)
+250 2
+
+fl=(3)
+fn=(64)
+249 5
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+250 2
+
+fl=(3)
+fn=(66) Webgrind_Reader->getHeader
+193 79
+cfl=(3)
+cfn=(62)
+calls=1 0 0
+195 5
+cfl=(3)
+cfn=(64)
+calls=1 0 0
+202 9
+cfl=(1)
+cfn=(65)
+calls=1 0 0
+203 0
+cfl=(3)
+cfn=(64)
+calls=1 0 0
+202 9
+cfl=(1)
+cfn=(65)
+calls=1 0 0
+203 0
+cfl=(3)
+cfn=(64)
+calls=1 0 0
+202 9
+cfl=(1)
+cfn=(65)
+calls=1 0 0
+203 0
+cfl=(3)
+cfn=(64)
+calls=1 0 0
+202 9
+cfl=(1)
+cfn=(65)
+calls=1 0 0
+203 0
+cfl=(3)
+cfn=(64)
+calls=1 0 0
+202 8
+cfl=(1)
+cfn=(65)
+calls=1 0 0
+203 0
+cfl=(3)
+cfn=(64)
+calls=1 0 0
+202 7
+cfl=(1)
+cfn=(65)
+calls=1 0 0
+203 0
+cfl=(3)
+cfn=(64)
+calls=1 0 0
+202 7
+
+fl=(1)
+fn=(67) php::number_format
+230 5
+
+fl=(3)
+fn=(68) Webgrind_Reader->formatCost
+223 23
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+228 145
+cfl=(1)
+cfn=(67)
+calls=1 0 0
+230 5
+
+fl=(3)
+fn=(66)
+193 1
+
+fl=(1)
+fn=(67)
+230 0
+
+fl=(3)
+fn=(68)
+223 8
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+228 1
+cfl=(1)
+cfn=(67)
+calls=1 0 0
+230 0
+
+fl=(3)
+fn=(69) Webgrind_Reader->getFunctionInfo
+108 51
+cfl=(3)
+cfn=(62)
+calls=1 0 0
+109 8
+cfl=(3)
+cfn=(57)
+calls=1 0 0
+111 19
+cfl=(3)
+cfn=(62)
+calls=1 0 0
+113 4
+cfl=(3)
+cfn=(64)
+calls=1 0 0
+114 14
+cfl=(3)
+cfn=(64)
+calls=1 0 0
+115 9
+cfl=(3)
+cfn=(68)
+calls=1 0 0
+128 174
+cfl=(3)
+cfn=(68)
+calls=1 0 0
+129 10
+
+fl=(1)
+fn=(70) php::strpos
+51 0
+
+fl=(6)
+fn=(10)
+230 1
+
+fl=(1)
+fn=(28)
+99 0
+
+fl=(3)
+fn=(60)
+98 5
+cfl=(1)
+cfn=(28)
+calls=1 0 0
+99 0
+
+fl=(1)
+fn=(61)
+258 0
+
+fl=(3)
+fn=(62)
+257 4
+cfl=(1)
+cfn=(61)
+calls=1 0 0
+258 0
+
+fl=(1)
+fn=(54)
+242 0
+
+fl=(1)
+fn=(55)
+242 2
+
+fl=(1)
+fn=(56)
+246 0
+
+fl=(3)
+fn=(57)
+241 12
+cfl=(1)
+cfn=(54)
+calls=1 0 0
+242 0
+cfl=(1)
+cfn=(55)
+calls=1 0 0
+242 2
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+246 0
+
+fl=(1)
+fn=(61)
+258 0
+
+fl=(3)
+fn=(62)
+257 3
+cfl=(1)
+cfn=(61)
+calls=1 0 0
+258 0
+
+fl=(1)
+fn=(21)
+250 0
+
+fl=(1)
+fn=(63)
+252 0
+
+fl=(3)
+fn=(64)
+249 9
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+250 0
+cfl=(1)
+cfn=(63)
+calls=1 0 0
+252 0
+
+fl=(1)
+fn=(21)
+250 0
+
+fl=(1)
+fn=(63)
+252 0
+
+fl=(3)
+fn=(64)
+249 6
+cfl=(1)
+cfn=(21)
+calls=1 0 0
+250 0
+cfl=(1)
+cfn=(63)
+calls=1 0 0
+252 0
+
+fl=(3)
+fn=(66)
+193 1
+
+fl=(1)
+fn=(67)
+230 1
+
+fl=(3)
+fn=(68)
+223 8
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+228 1
+cfl=(1)
+cfn=(67)
+calls=1 0 0
+230 1
+
+fl=(3)
+fn=(66)
+193 0
+
+fl=(1)
+fn=(67)
+230 0
+
+fl=(3)
+fn=(68)
+223 9
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+228 0
+cfl=(1)
+cfn=(67)
+calls=1 0 0
+230 0
+
+fl=(3)
+fn=(69)
+108 42
+cfl=(3)
+cfn=(62)
+calls=1 0 0
+109 5
+cfl=(3)
+cfn=(57)
+calls=1 0 0
+111 15
+cfl=(3)
+cfn=(62)
+calls=1 0 0
+113 3
+cfl=(3)
+cfn=(64)
+calls=1 0 0
+114 9
+cfl=(3)
+cfn=(64)
+calls=1 0 0
+115 8
+cfl=(3)
+cfn=(68)
+calls=1 0 0
+128 10
+cfl=(3)
+cfn=(68)
+calls=1 0 0
+129 10
+
+fl=(1)
+fn=(70)
+51 0
+
+fl=(6)
+fn=(10)
+230 0
+
+fl=(1)
+fn=(28)
+99 0
+
+fl=(3)
+fn=(60)
+98 5
+cfl=(1)
+cfn=(28)
+calls=1 0 0
+99 0
+
+fl=(6)
+fn=(71) costCmp
+234 2
+
+fl=(1)
+fn=(72) php::usort
+76 9
+cfl=(6)
+cfn=(71)
+calls=1 0 0
+76 2
+
+fl=(6)
+fn=(10)
+230 0
+
+fl=(1)
+fn=(73) php::urlencode
+83 0
+
+fl=(1)
+fn=(28)
+99 0
+
+fl=(3)
+fn=(60)
+98 4
+cfl=(1)
+cfn=(28)
+calls=1 0 0
+99 0
+
+fl=(3)
+fn=(66)
+193 0
+
+fl=(1)
+fn=(29)
+234 0
+
+fl=(3)
+fn=(68)
+223 5
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+234 0
+
+fl=(3)
+fn=(66)
+193 0
+
+fl=(3)
+fn=(66)
+193 0
+
+fl=(1)
+fn=(8)
+112 1
+
+fl=(1)
+fn=(1)
+115 0
+
+fl=(2)
+fn=(13)
+111 12
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+112 1
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+115 0
+
+fl=(1)
+fn=(26)
+94 7
+
+fl=(1)
+fn=(41)
+94 5
+
+fl=(3)
+fn=(66)
+193 0
+
+fl=(1)
+fn=(11)
+96 5
+
+fl=(1)
+fn=(74) php::version_compare
+97 1
+
+fl=(1)
+fn=(75) php::header
+245 2
+
+fl=(1)
+fn=(76) php::json_encode
+246 10
+
+fl=(6)
+fn=(77) sendJson
+244 14
+cfl=(1)
+cfn=(75)
+calls=1 0 0
+245 2
+cfl=(1)
+cfn=(76)
+calls=1 0 0
+246 10
+
+fl=(6)
+fn=(78) {main}
+
+summary: 231954
+
+1 346
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+9 6
+cfl=(1)
+cfn=(2)
+calls=1 0 0
+9 1
+cfl=(2)
+cfn=(3)
+calls=1 0 0
+19 2
+cfl=(5)
+cfn=(6)
+calls=1 0 0
+20 32
+cfl=(1)
+cfn=(7)
+calls=1 0 0
+25 5
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+28 2
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+29 3
+cfl=(6)
+cfn=(10)
+calls=1 0 0
+32 3
+cfl=(6)
+cfn=(10)
+calls=1 0 0
+38 0
+cfl=(5)
+cfn=(40)
+calls=1 0 0
+40 849
+cfl=(5)
+cfn=(42)
+calls=1 0 0
+40 72
+cfl=(5)
+cfn=(40)
+calls=1 0 0
+43 0
+cfl=(6)
+cfn=(10)
+calls=1 0 0
+43 1
+cfl=(5)
+cfn=(59)
+calls=1 0 0
+43 230121
+cfl=(3)
+cfn=(60)
+calls=1 0 0
+48 7
+cfl=(3)
+cfn=(69)
+calls=1 0 0
+49 290
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+51 0
+cfl=(6)
+cfn=(10)
+calls=1 0 0
+69 1
+cfl=(3)
+cfn=(60)
+calls=1 0 0
+48 5
+cfl=(3)
+cfn=(69)
+calls=1 0 0
+49 104
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+51 0
+cfl=(6)
+cfn=(10)
+calls=1 0 0
+69 0
+cfl=(3)
+cfn=(60)
+calls=1 0 0
+48 5
+cfl=(1)
+cfn=(72)
+calls=1 0 0
+76 11
+cfl=(6)
+cfn=(10)
+calls=1 0 0
+78 0
+cfl=(1)
+cfn=(73)
+calls=1 0 0
+83 0
+cfl=(3)
+cfn=(60)
+calls=1 0 0
+88 4
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+89 0
+cfl=(3)
+cfn=(68)
+calls=1 0 0
+89 5
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+91 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+92 0
+cfl=(2)
+cfn=(13)
+calls=1 0 0
+94 15
+cfl=(1)
+cfn=(26)
+calls=1 0 0
+94 7
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+94 5
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+96 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+96 5
+cfl=(1)
+cfn=(74)
+calls=1 0 0
+97 1
+cfl=(6)
+cfn=(77)
+calls=1 0 0
+99 27
+
