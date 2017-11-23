@@ -30,6 +30,7 @@ class CreateThreadsTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('threads');
     }
 }
